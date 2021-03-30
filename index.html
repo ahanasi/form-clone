@@ -6,31 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/stylesheets/main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet" />
   </head>
   <body>
-      <header class="nav flex-container">
-        <div class="login-info flex-container">
-            <div class="forgot-password flex-container">
-                <p>Already have an Intuit account?</p>
-                <a href="#">I forgot my User ID or Password</a>
-            </div>
-            <button id="login-btn"><span class="lock-img"></span>Sign In</button>
+    <header class="nav flex-container">
+      <div class="login-info flex-container">
+        <div class="forgot-password flex-column">
+          <p>Already have an Intuit account?</p>
+          <a href="#">I forgot my User ID or Password</a>
         </div>
+        <button id="loginBtn" class="btn"><span class="lock-img"></span>Sign In</button>
+      </div>
+    </header>
+    <main>
+      <header class="flex-column">
+        <div class="brand-logo"></div>
       </header>
-      <main>
-          <header class="flex-container">
-            <div class="brand-logo"></div>
-          </header>
-          <div class="apps-nav flex-container">
-            <ul class="flex-container">
-                <li class="mint"><span class="app-icon"></span><a href="https://www.mint.com/" target="_blank" class="app-text"></a></li>
-                <li class="qbooks"><span class="app-icon"></span><a href="https://quickbooks.intuit.com" target="_blank" class="app-text"></a></li>
-                <li class="ttax"><span class="app-icon"></span><a href="https://www.mint.com/" target="_blank" class="app-text"></a></li>
-            </ul>
-        </div>
-      </main>
-      <footer></footer>
+      <div class="apps-nav flex-container">
+        <ul class="flex-container">
+          <li class="mint"><span class="app-icon"></span><a href="https://www.mint.com/" target="_blank" class="app-text"></a></li>
+          <li class="qbooks"><span class="app-icon"></span><a href="https://quickbooks.intuit.com" target="_blank" class="app-text"></a></li>
+          <li class="ttax"><span class="app-icon"></span><a href="https://www.mint.com/" target="_blank" class="app-text"></a></li>
+        </ul>
+      </div>
+      <section class="form-wrapper flex-column">
+        <header class="form-header">
+          <hgroup class="flex-column">
+            <h1>Create an Intuit account</h1>
+            <h2 class="form-text">One account for everything Intuit, including Mint.</h2>
+            <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account" target="_blank" class="form-text">Learn&nbsp;more</a>
+          </hgroup>
+        </header>
+        <form action="#" method="post" autocomplete="off">
+          <fieldset class="flex-column">
+            <label class="form-label form-text" for="userEmail">Email address</label>
+            <input type="email" id="userEmail" class="form-input" name="userEmail" />
+          </fieldset>
+          <fieldset class="flex-column">
+            <label class="form-label form-text" for="userPhone">Phone (recommended)</label>
+            <input type="tel" id="userPhone" class="form-input" name="userPhone" />
+            <div class="form-label help-text">Standard call, messaging or data rates may apply.</div>
+          </fieldset>
+          <fieldset class="flex-column">
+            <label class="form-label form-text" for="userPwd">Password</label>
+            <div class="pwd-wrapper">
+              <input type="password" id="userPwd" class="form-input" name="userPwd" /><!--
+              --><span class="pass-lock"></span>
+            </div>
+          </fieldset>
+          <button id="submitBtn" class="btn"><span class="lock-img"></span>Create Account</button>
+        </form>
+        <footer>
+          <div class="terms-wrapper">
+            <em
+              >By clicking Create Account, you agree to our <br />
+              <a href="https://www.mint.com/terms" target="_blank">Terms</a> and have read and acknowledge our
+              <a href="https://www.intuit.com/privacy/statement/">Global Privacy Statement</a>.</em
+            >
+          </div>
+          <div class="captcha-div flex-column help-text">
+            <p>Invisible reCAPTCHA by Google <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy Policy </a> and <a href="https://www.google.com/intl/en/policies/terms/">Terms of Use</a>.</p>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
