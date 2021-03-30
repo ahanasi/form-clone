@@ -410,3 +410,43 @@ span.pass-lock {
   font-style: normal;
   color: #8d9096;
 }
+
+footer.flex-column {
+  padding: 20px;
+  color: #505050;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+}
+
+.link-container {
+  line-height: 18px;
+  list-style: none;
+}
+
+.link-container > li {
+  padding-right: 9px;
+}
+
+.link-container > li > a {
+  color: #505050;
+}
+
+.copyright-wrapper {
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.privacy-settings{
+  padding: 20px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  height: 24px;
+  background-color: white;
+  width: 100vw;
+}
+
+.privacy-settings > a {
+  margin-left: 15px;
+  font-weight: normal;
+}
